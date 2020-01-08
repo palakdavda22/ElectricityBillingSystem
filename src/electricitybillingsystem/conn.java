@@ -15,8 +15,8 @@ public class conn {
     Statement s;
     public conn(){
         try{
-            Class.forName("conn.mysql.jdbc.Driver");
-            c = DriverManager.getConnection("jdbc:mysql://localhost:3306/project","root","");
+//            Class.forName("conn.mysql.jdbc.Driver");
+            c = DriverManager.getConnection("jdbc:mysql://localhost:3306/electricity","root","");
             s = c.createStatement();
             JOptionPane.showMessageDialog(null,"Connection Succcessful","Connection", JOptionPane.INFORMATION_MESSAGE);
             

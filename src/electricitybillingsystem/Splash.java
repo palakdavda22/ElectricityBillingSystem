@@ -44,9 +44,13 @@ class fframe extends JFrame implements Runnable{
     public void run(){
         try{
             Thread.sleep(7000);
+            Login l = new Login();
+            l.setVisible(true);
             this.setVisible(false);
+            
         }catch(Exception e){
             System.out.println("Error in splash screen: "+ e);
+            e.printStackTrace();
         }
     }
 }
